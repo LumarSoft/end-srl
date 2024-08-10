@@ -27,7 +27,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <main>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>
