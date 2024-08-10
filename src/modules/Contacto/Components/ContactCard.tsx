@@ -48,8 +48,7 @@ export default function ContactCard() {
         "QKnAoh9QQZ0-6AXIU"
       );
       toast({
-        title: "Éxito",
-        description: "Mensaje enviado con éxito!",
+        title: "Mensaje enviado con éxito!",
         className: "bg-green-200 text-green-600 border-green-500 font-bold",
       });
       setFormData({
