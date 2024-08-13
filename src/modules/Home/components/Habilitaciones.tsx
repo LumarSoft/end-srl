@@ -27,7 +27,7 @@ export function Habilitaciones() {
     },
   };
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-[#05589e]">
+    <section className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
         <div className="space-y-4">
           <FramerComponent
@@ -35,10 +35,10 @@ export function Habilitaciones() {
             animationWhileInView={{ y: 0, opacity: 1 }}
             animationViewPort={{ once: true, offset: 0.4 }}
           >
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
               Habilitaciones
             </h2>
-            <p className="max-w-[800px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               ESTE T.A.R. (TALLERES AERONÁUTICOS DE REPARACIÓN) CUENTA CON TODAS
               LAS CERTIFICACIONES Y NORMAS VIGENTES REQUERIDAS POR NUESTRA
               ADMINISTRACIÓN NACIONAL DE AVIACION CIVIL (ANAC) Y SE MANTIENEN
@@ -53,36 +53,36 @@ export function Habilitaciones() {
             animationViewPort={{ once: true, offset: 0.4 }}
           >
             <FramerComponent
-              style="rounded-lg bg-white p-4"
+              style="rounded-lg bg-secondary p-4 border flex flex-col justify-between items-center"
               animationInitial={{ opacity: 0, y: 50 }}
               animationVariants={itemAnimado}
             >
               <h3 className="text-lg font-semibold">
                 Partículas Magnetizables
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground flex-1">
                 ASTM E1444/E1444M - ASTM E709 - Procedimientos aprobados de
                 Lycoming - PROCEDIMIENTOS DEL FABRICANTE
               </p>
             </FramerComponent>
             <FramerComponent
-              style="rounded-lg bg-white p-4"
+              style="rounded-lg bg-secondary p-4 border flex flex-col justify-between items-center"
               animationInitial={{ opacity: 0, y: 50 }}
               animationVariants={itemAnimado}
             >
               <h3 className="text-lg font-semibold">Corrientes Inducidas</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground flex-1">
                 MIL-HDBK-728/2 - MIL-STD-1537 - SAE ARP 4402 - PROCEDIMIENTOS
                 DEL FABRICANTE
               </p>
             </FramerComponent>
             <FramerComponent
-              style="rounded-lg bg-white p-4"
+              style="rounded-lg bg-secondary p-4 border flex flex-col justify-between items-center"
               animationInitial={{ opacity: 0, y: 50 }}
               animationVariants={itemAnimado}
             >
               <h3 className="text-lg font-semibold">Ultrasonidos</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground flex-1">
                 ASTM E317 - ASTM E587 - ASTM B594 - SAE AMS-STD-2154 - ASTM E127
                 - Procedimiento MHS-200 de Teledyne Continental Motors - CFM56-7
                 Fan Blade Ultrasonic Inspection de GE Aircraft Engines -
@@ -90,57 +90,57 @@ export function Habilitaciones() {
               </p>
             </FramerComponent>
             <FramerComponent
-              style=" rounded-lg bg-white p-4"
+              style=" rounded-lg bg-secondary p-4 border"
               animationInitial={{ opacity: 0, y: 50 }}
               animationVariants={itemAnimado}
             >
               <h3 className="text-lg font-semibold">Ultrasonido Phase Array</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground flex-1">
                 ASTM E2491 - PROCEDIMIENTOS DEL FABRICANTE
               </p>
             </FramerComponent>
             <FramerComponent
-              style="rounded-lg bg-white p-4"
+              style="rounded-lg bg-secondary p-4 border flex flex-col justify-between items-center"
               animationInitial={{ opacity: 0, y: 50 }}
               animationVariants={itemAnimado}
             >
               <h3 className="text-lg font-semibold">Liquidos penetrantes</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground flex-1">
                 ASTM E165/E165M - ASTM E1417/E1417M - SAE AMS-2644 -
                 Procedimientos aprobados de Lycoming - PROCEDIMIENTOS DEL
                 FABRICANTE
               </p>
             </FramerComponent>
             <FramerComponent
-              style="rounded-lg bg-white p-4"
+              style="rounded-lg bg-secondary p-4 border flex flex-col justify-between items-center"
               animationInitial={{ opacity: 0, y: 50 }}
               animationVariants={itemAnimado}
             >
               <h3 className="text-lg font-semibold">Radiografía Industrial</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground flex-1">
                 ASTM E1742/E1742M - ASTM E94 - ASTM E1079 - ASTM E1254 -
                 PROCEDIMIENTOS DEL FABRICANTE
               </p>
             </FramerComponent>
             <FramerComponent
-              style="rounded-lg bg-white p-4"
+              style="rounded-lg bg-secondary p-4 border flex flex-col justify-between items-center"
               animationInitial={{ opacity: 0, y: 50 }}
               animationVariants={itemAnimado}
             >
               <h3 className="text-lg font-semibold">
                 Endoscopía / Boroscopía / Videoscopía
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground flex-1">
                 PROCEDIMIENTOS DEL FABRICANTE
               </p>
             </FramerComponent>
             <FramerComponent
-              style="rounded-lg bg-white p-4"
+              style="rounded-lg bg-secondary p-4 border flex flex-col justify-between items-center"
               animationInitial={{ opacity: 0, y: 50 }}
               animationVariants={itemAnimado}
             >
               <h3 className="text-lg font-semibold">Personal / Taller</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground flex-1">
                 ISO 9712 - ASTM E1212 - ASTM E543 - ASNT SNT-TC-1A
               </p>
             </FramerComponent>

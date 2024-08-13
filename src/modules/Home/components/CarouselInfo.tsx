@@ -4,6 +4,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import { FramerComponent } from "@/shared/Framer/FramerComponent";
 import Autoplay from "embla-carousel-autoplay";
@@ -46,7 +48,7 @@ export function CarouselInfo() {
             <CarouselItem key={index}>
               <div className="flex flex-col items-center justify-center text-center gap-6">
                 <div>
-                  <p className="text-4xl font-bold md:text-5xl text-[#0b589a]">
+                  <p className="text-4xl font-bold md:text-5xl text-primary">
                     {slide.title}
                   </p>
                   <p className="">{slide.text}</p>
@@ -60,6 +62,8 @@ export function CarouselInfo() {
             </CarouselItem>
           ))}
         </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
       </Carousel>
     </FramerComponent>
   );

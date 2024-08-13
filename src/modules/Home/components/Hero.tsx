@@ -11,7 +11,7 @@ export const Hero = () => {
         <h1 className="text-3xl font-bold md:text-4xl max-lg:text-center">
           Líderes en reparación aeronáutica:
           <br />
-          <b className="underline decoration-[#0b589a] text-[#0b589a] text-4xl md:text-5xl">
+          <b className="underline decoration-primary text-primary text-4xl md:text-5xl">
             Confianza y calidad garantizadas.
           </b>
         </h1>
@@ -21,7 +21,7 @@ export const Hero = () => {
           necessitatibus, quis expedita ipsa repudiandae quidem rerum illum
           earum deleniti quibusdam alias est!
         </p>
-        <button className="bg-[#0b589a] hover:bg-sky-800 text-white py-3 w-full rounded-md transition">
+        <button className="bg-primary hover:bg-sky-800 text-white py-3 w-full rounded-md transition">
           Contactanos
         </button>
       </FramerComponent>
