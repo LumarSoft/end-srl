@@ -24,7 +24,7 @@ export const Navbar = () => {
 
   return (
     <FramerComponent
-      style={`w-full flex justify-between items-center px-4 md:px-28 2xl:px-80 2xl:h-20 fixed z-20 transition-shadow duration-500 bg-white ${
+      style={`w-full flex justify-between items-center px-4 md:px-28 2xl:px-80 2xl:h-20 fixed z-20 transition-shadow duration-500 bg-white top-0 ${
         scrolled ? "shadow-xl" : ""
       }`}
       animationInitial={{ y: -100, opacity: 0 }}

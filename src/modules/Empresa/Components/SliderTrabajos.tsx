@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import {
   Carousel,
@@ -6,13 +7,22 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from "@/components/ui/carousel";
-import { Badge } from "lucide-react";
 import { BadgeClientes } from "./BadgeClientes";
+import Autoplay from "embla-carousel-autoplay";
 
 export default function SliderTrabajos() {
   return (
-    <div className="relative w-full max-w-2xl mx-auto">
-      <Carousel className="rounded-lg overflow-hidden">
+    <div className="relative w-full max-w-2xl mx-auto mb-9 lg:px-5 px-4">
+      <Carousel
+        className="rounded-lg overflow-hidden"
+        plugins={[
+          Autoplay({ delay: 9000 }),
+        ]}
+        opts={{
+          align: "start",
+          loop: true,
+        }}
+      >
         <CarouselContent>
           <CarouselItem>
             <div className="relative h-[500px] sm:h-[600px] lg:h-[700px]">
@@ -51,11 +61,11 @@ export default function SliderTrabajos() {
                   Personal altamente capacitado
                 </h3>
                 <p className="mt-2 sm:mt-3 lg:mt-4 text-base sm:text-lg lg:text-l text-white/80">
-                  Contamos con especialistas calificados y de basta experiencia
+                  Contamos con especialistas calificados y de vasta experiencia
                   operativa. Nuestro personal está capacitado para trabajar con
                   la última tecnología en Ensayos No Destructivos. Además
                   realizamos nuestras tareas de forma segura y con asesoramiento
-                  permanente a nuestro Cliente
+                  permanente a nuestro Cliente.
                 </p>
               </div>
             </div>
@@ -125,7 +135,7 @@ export default function SliderTrabajos() {
                   Clientes satisfechos
                 </h3>
                 <p className="mt-2 sm:mt-3 lg:mt-4 text-base sm:text-lg lg:text-l text-white/80">
-                  Estos son algunos de nuestros clientes que sigue confiando en
+                  Estos son algunos de nuestros clientes que siguen confiando en
                   END SERVICIOS AERONÁUTICOS SRL:
                 </p>
                 <ul className="text-white/80">
@@ -154,10 +164,10 @@ export default function SliderTrabajos() {
             </div>
           </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious className="absolute top-1/2 -translate-y-1/2 left-4 z-10 text-black hover:text-primary transition-colors">
+        <CarouselPrevious className="hidden lg:flex absolute top-1/2 -translate-y-1/2 left-4 z-10 text-black hover:text-primary transition-colors">
           <ChevronLeftIcon className="w-8 h-8" />
         </CarouselPrevious>
-        <CarouselNext className="absolute top-1/2 -translate-y-1/2 right-4 z-10 text-black hover:text-primary transition-colors">
+        <CarouselNext className="hidden lg:flex absolute top-1/2 -translate-y-1/2 right-4 z-10 text-black hover:text-primary transition-colors">
           <ChevronRightIcon className="w-8 h-8" />
         </CarouselNext>
       </Carousel>
