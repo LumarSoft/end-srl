@@ -1,3 +1,5 @@
+"use client";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Briefcase, Cpu, Target } from "lucide-react";
 import {
@@ -12,6 +14,8 @@ import { services } from "@/modules/Servicios/Components/services";
 import { Button } from "@/components/ui/button";
 
 export default function ServicesCard() {
+  const router = useRouter();
+
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-8 text-center text-sky-700">
@@ -23,9 +27,8 @@ export default function ServicesCard() {
           <Image
             src="/turbinaAvion.jpg"
             alt="Turbina de avión"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg shadow-lg"
+            fill
+            className="rounded-lg shadow-lg object-cover"
           />
         </div>
 
@@ -78,7 +81,7 @@ export default function ServicesCard() {
               <Image
                 src={service.image}
                 alt={service.title}
-                layout="fill"
+                fill
                 className="object-cover w-full h-64"
               />
             </div>
@@ -94,7 +97,11 @@ export default function ServicesCard() {
                 </CardDescription>
               </CardContent>
               <CardFooter className="mt-auto">
-                <Button variant="outline" className="w-full font-semibold">
+                <Button
+                  variant="outline"
+                  className="w-full font-semibold"
+                  onClick={() => router.push(service.url)}
+                >
                   Ver más
                 </Button>
               </CardFooter>
