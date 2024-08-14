@@ -9,7 +9,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import services from "./services"
+import services from "./services";
+import Link from "next/link";
 
 export default function ServicesCard() {
   return (
@@ -39,9 +40,11 @@ export default function ServicesCard() {
               </CardDescription>
             </CardContent>
             <CardFooter className="mt-auto">
-              <Button variant="outline" className="w-full font-semibold">
-                Ver más
-              </Button>
+              <Link href={service.url}>
+                <Button className="w-full font-semibold" variant={"outline"}>
+                  Ver más
+                </Button>
+              </Link>
             </CardFooter>
           </div>
         </Card>
