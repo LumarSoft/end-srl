@@ -1,0 +1,9 @@
+{
+    "serviceName": "ultrasonidos",
+    "title": "Ultrasonidos",
+    "subtitle": "Resonancia, Reverberación, Ondas Superficiales, Pulso-Eco, Placa Reflectora, “Shadow”, Transmisión por Contacto e Inmersión.",
+    "items_desc": [" ", " ", " "],
+    "items": ["Pruebas de piezas y componentes fabricados en materiales compuestos y metales (laminados sólidos). Pruebas de estructuras metálicas y compuestas.", "Pruebas de cilindros de retracción de tren de aterrizaje, cilindros de gas, piezas fundidas, forjadas, laminadas, soldadas, entre otras. Pruebas de liner en tubos con combustible sólido (propelentes).", "Pruebas de palas del rotor principal de helicópteros, fabricadas en materiales compuestos, con alma de titanio para la detección de partes despegadas, daños no visibles y pruebas pos reparación. Medición de espesor por Ultrasonido de piezas fabricadas. Pruebas de estructuras aeronáuticas fabricadas en aluminio y magnesio."],
+    "images": ["ultrasonidos-0.jpg", "ultrasonidos-1.jpg", "ultrasonidos-2.jpg"],
+    "cards": ["ULTRASONIDO", "Detección de defectos en superficie o internos, fisuras, despegamientos, desgarramiento laminar y medición de espesores, en la mayoría de los metales por medio de la técnica de pulso eco.", "Método rápido, confiable y fácil de operar. Los resultados son conocidos de inmediato. De gran exactitud, sensible y portátil.", "Se requiere un operador con buen entrenamiento. Debe conocerse la orientación del defecto, para seleccionar la onda a ser empleada. Necesidad de normas para establecer la sensibilidad del instrumento."]
+}

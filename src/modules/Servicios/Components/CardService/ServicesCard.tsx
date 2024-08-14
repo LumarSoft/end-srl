@@ -40,8 +40,8 @@ export default function ServicesCard() {
               </CardDescription>
             </CardContent>
             <CardFooter className="mt-auto">
-              <Link href={service.url}>
-                <Button className="w-full font-semibold" variant={"outline"}>
+              <Link href={service.url} className="w-full font-semibold">
+                <Button className="w-full" variant={"outline"}>
                   Ver más
                 </Button>
               </Link>

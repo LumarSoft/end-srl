@@ -1,0 +1,9 @@
+{
+    "serviceName": "radiografia-industrial",
+    "title": "Radiografía Industrial (RX)",
+    "subtitle": "Detección de discontinuidades internas y defectos, tales com fisuras, corrosión, inclusiones y variaciones de espesores.",
+    "items_desc": [" ", " ", " "],
+    "items": ["Pruebas radiográfico para materiales metálicos, fundidos, forjados, laminados y juntas soldadas.", "Pruebas radiográfico con bajos kilo-volts y alto mili-amperaje en materiales compuestos, laminados o tipo sándwich.", "Pruebas en palas de rotor principal de helicópteros fabricadas en materiales compuestos, para la detección de agua en el núcleo e inspección post reparación."],
+    "images": ["rx.jpg", "rx-1.jpg", "rx-2.jpg"],
+    "cards": ["RAYOS X", "Detección de discontinuidades internas y defectos, tales com fisuras, corrosión, inclusiones y variaciones de espesores.", "Elimina muchos requerimientos de desalineación de montajes. De gran sensibilidad y suministra un documento permanente y perdurable.", "Accidentes por radiación. Entrenamiento de los operadores. Procesamiento de películas y necesidad de equipos adecuados. Las fisuras deben encontrarse paralelas al haz de radiación, para ser detectadas. Es necesaria una fuente de energía eléctrica."]
+}
