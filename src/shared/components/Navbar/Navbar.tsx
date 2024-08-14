@@ -31,7 +31,7 @@ export const Navbar = () => {
       animationAnimate={{ y: 0, opacity: 1 }}
     >
       <Link href={"/"}>
-        <img src="/logo.png" className="h-16" />
+        <img src="/logo.png" className="h-16" alt="Logo END" />
       </Link>
 
       <nav className="flex gap-2 md:gap-4 items-center">
@@ -39,7 +39,7 @@ export const Navbar = () => {
         <Link href={"/servicios"}>Servicios</Link>
         <Link href={"/contacto"}>Contacto</Link>
         <Link href={"/wsp"}>
-          <img src="/whatsapp.svg" className="w-10 h-10" />
+          <img src="/whatsapp.svg" className="w-10 h-10" alt="Whatsapp icono" />
         </Link>
       </nav>
     </FramerComponent>

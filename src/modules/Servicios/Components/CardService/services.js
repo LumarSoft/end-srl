@@ -1,4 +1,4 @@
-export const services = [
+const services = [
   {
     title: "INSPECCIÓN VISUAL",
     description:
@@ -36,3 +36,5 @@ export const services = [
     image: "/radiografiaIndustrialRx.jpg",
   },
 ];
+
+export default services;
