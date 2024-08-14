@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import Footer from "@/shared/components/Footer/Footer";
 import { Navbar } from "@/shared/components/Navbar/Navbar";
 
 const fontSans = FontSans({
@@ -29,7 +30,8 @@ export default function RootLayout({
         )}
       >
         <Navbar />
-        {children}
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
