@@ -1,4 +1,4 @@
-export const services = [
+const services = [
   {
     title: "INSPECCIÓN VISUAL",
     description:
@@ -42,3 +42,5 @@ export const services = [
     url: "/servicios/radiografia-industrial",
   },
 ];
+
+export default services;
