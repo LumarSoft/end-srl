@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight, Briefcase, Cpu, Target } from "lucide-react";
+import { Briefcase, Cpu, Target } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -23,7 +22,7 @@ export default function ServicesCard() {
         <div className="relative h-[400px] mb-8">
           <Image
             src="/turbinaAvion.jpg"
-            alt="Turbina de avión representando ensayos no destructivos"
+            alt="Turbina de avión"
             layout="fill"
             objectFit="cover"
             className="rounded-lg shadow-lg"
