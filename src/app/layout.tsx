@@ -29,12 +29,14 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased overflow-y-hidden scroll-smooth",
+          "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}
+        style={{ overflow: "hidden" }}
       >
         <Navbar />
         <OpenHomeAnimation />
+
         {children}
         <Footer />
         <Toaster />

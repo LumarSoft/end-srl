@@ -104,7 +104,7 @@ export default function OneServiceModule({ data }: { data: any }) {
               <CarouselContent>
                 <CarouselItem>
                   <img
-                    src={`/${data.images[0]}`}
+                    src={`${data.images[0]}`}
                     alt="Imagen 1"
                     width={800}
                     height={500}
@@ -114,7 +114,7 @@ export default function OneServiceModule({ data }: { data: any }) {
                 </CarouselItem>
                 <CarouselItem>
                   <img
-                    src={`/${data.images[1]}`}
+                    src={`${data.images[1]}`}
                     alt="Imagen 2"
                     width={800}
                     height={500}
@@ -124,7 +124,7 @@ export default function OneServiceModule({ data }: { data: any }) {
                 </CarouselItem>
                 <CarouselItem>
                   <img
-                    src={`/${data.images[2]}`}
+                    src={`${data.images[2]}`}
                     alt="Imagen 3"
                     width={800}
                     height={500}

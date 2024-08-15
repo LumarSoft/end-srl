@@ -1,9 +1,22 @@
 {
-    "serviceName": "corrientes-inducidas",
-    "title": "Corrientes Inducidas",
-    "subtitle": "Alta, media y baja frecuencia.",
-    "items_desc": [" ", " ", " "],
-    "items": ["Pruebas de estructuras aeronáuticas y aeroespaciales fabricadas en materiales metálicos y ferro-magnéticos.", "Pruebas de alta, media y baja frecuencia para detección de discontinuidades en estructuras aeronáuticas, sin remoción de remaches y/o Hi-Locks.", "Pruebas de agujeros dirigidos a la detección de discontinuidades internas. Utilización de sondas absolutas, diferenciales, reflexión, sliding."],
-    "images": ["corrientes-inducidas.jpg", "corrientes-inducidas-1.jpg", "corrientes-inducidas-2.jpg"],
-    "cards": ["CORRIENTES INDUCIDAS", "Detección de defectos superficiales en metales, fisuras, inclusiones, corrosiones irregulares y tratamientos térmicos, mediciones de conductividad para determinar la zona de deterioro por incendio.", "Útil para el control de elementos de fijación o sus zonas de influencia, en busca de fisuras no detectables por los métodos visuales o de penetrantes. Es rápido, sensible y portátil.", "Sensible a combinaciones y variaciones de material. Requiere transductores especiales para cada aplicación en particular."]
+  "serviceName": "corrientes-inducidas",
+  "title": "Corrientes Inducidas",
+  "subtitle": "Alta, media y baja frecuencia.",
+  "items_desc": [" ", " ", " "],
+  "items": [
+    "Pruebas de estructuras aeronáuticas y aeroespaciales fabricadas en materiales metálicos y ferro-magnéticos.",
+    "Pruebas de alta, media y baja frecuencia para detección de discontinuidades en estructuras aeronáuticas, sin remoción de remaches y/o Hi-Locks.",
+    "Pruebas de agujeros dirigidos a la detección de discontinuidades internas. Utilización de sondas absolutas, diferenciales, reflexión, sliding."
+  ],
+  "images": [
+    "/servicioEspecifico/corrientes-inducidas.jpg",
+    "/servicioEspecifico/corrientes-inducidas-1.jpg",
+    "/servicioEspecifico/corrientes-inducidas-2.jpg"
+  ],
+  "cards": [
+    "CORRIENTES INDUCIDAS",
+    "Detección de defectos superficiales en metales, fisuras, inclusiones, corrosiones irregulares y tratamientos térmicos, mediciones de conductividad para determinar la zona de deterioro por incendio.",
+    "Útil para el control de elementos de fijación o sus zonas de influencia, en busca de fisuras no detectables por los métodos visuales o de penetrantes. Es rápido, sensible y portátil.",
+    "Sensible a combinaciones y variaciones de material. Requiere transductores especiales para cada aplicación en particular."
+  ]
 }

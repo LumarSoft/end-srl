@@ -38,7 +38,7 @@ export const Navbar = () => {
       animationAnimate={{ y: 0, opacity: 1 }}
     >
       <Link href={"/"}>
-        <img src="/logo.png" className="h-16" alt="Logo END" />
+        <img src="/logosPng/logoChicoOscuro.png" className="h-16" alt="Logo END" />
       </Link>
 
       <nav className="lg:flex gap-2 md:gap-4 items-center font-semibold hidden">
@@ -85,7 +85,7 @@ const DropDownNav = () => {
           <Link href={"/empresa"}>Empresa</Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <Link href={"/contacto"}>Contacto</Link>
+          <Link href={"/servicios"}>Servicios</Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
           <Link href={"/contacto"}>Contacto</Link>

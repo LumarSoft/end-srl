@@ -7,16 +7,15 @@ export default function EmpresaCard() {
       <FramerComponent
         style="w-full h-96 bg-neutral-400 rounded-md lg:max-w-xl lg:h-[40rem]"
         animationInitial={{ x: 200, opacity: 0 }}
-        animationWhileInView={{ x: 0, opacity: 1 }}
+        animationAnimate={{ x: 0, opacity: 1 }}
         animationViewPort={{ once: true, offset: 0.4 }}
       >
         <div className="relative w-full h-full">
           <Image
-            src="/mision.jpg"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
+            src="/multimedia/mision.jpg"
+            fill
             alt="Imagen de avión"
+            style={{ objectFit: "cover" }}
             className="rounded-md"
           />
         </div>
@@ -24,7 +23,7 @@ export default function EmpresaCard() {
       <FramerComponent
         style="flex flex-col gap-6 lg:pt-24 lg:max-w-lg"
         animationInitial={{ x: -200, opacity: 0 }}
-        animationWhileInView={{ x: 0, opacity: 1 }}
+        animationAnimate={{ x: 0, opacity: 1 }}
         animationViewPort={{ once: true, offset: 0.4 }}
       >
         <h3 className="text-[#5f92cc] font-semibold text-2xl">MISIÓN</h3>

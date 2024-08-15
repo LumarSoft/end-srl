@@ -13,19 +13,19 @@ import Autoplay from "embla-carousel-autoplay";
 export function CarouselInfo() {
   const slides = [
     {
-      src: "/carousel1.jpg",
-      title: "Quienes somos",
-      text: "Nacio en 1999, de la mano de juan carlos monsalvo. Hoy, con casi 20 años de experiencia, se posiciona como punta en servicios aeronáuticos.",
-    },
-    {
-      src: "/carousel2.jpg",
+      src: "/carouselHome/1.jpg",
       title: "Ensayos no productivos",
       text: "Brinda trabajos y servicios de excelencia en todo lo referente a ensayos no destructivos y mantenimiento de estructuras de aeronaves.",
     },
     {
-      src: "/carousel3.jpg",
-      title: "Calidad y construccion",
+      src: "/carouselHome/2.jpg",
+      title: "Calidad y capatación",
       text: "Cuenta con profesionales altamente capacitados en las diferentes técnicas de reparación aeronáutica, como las corrientes inducidas, los líquidos penetrantes o las partículas magnetizables.",
+    },
+    {
+      src: "/carouselHome/3.jpg",
+      title: "Quienes somos",
+      text: "Nacio en 1999, de la mano de juan carlos monsalvo. Hoy, con casi 20 años de experiencia, se posiciona como punta en servicios aeronáuticos.",
     },
   ];
   return (
@@ -56,7 +56,7 @@ export function CarouselInfo() {
                 <img
                   src={slide.src}
                   alt={`Slide ${index + 1}`}
-                  className="w-full h-[600px] object-cover rounded-lg"
+                  className="w-full h-[700px] object-fill rounded-lg"
                 />
               </div>
             </CarouselItem>

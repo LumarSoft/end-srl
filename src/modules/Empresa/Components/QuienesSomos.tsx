@@ -18,8 +18,7 @@ export const QuienesSomos = () => {
       <FramerComponent
         style="flex flex-col gap-4 items-center"
         animationInitial={{ opacity: 0, y: 50 }}
-        animationWhileInView={{ opacity: 1, y: 0 }}
-        animationTransition={{ duration: 0.3, delay: 0.1 }}
+        animationAnimate={{ opacity: 1, y: 0 }}
         animationViewPort={{ once: true, offset: 0.4 }}
       >
         <h2 className="text-2xl lg:text-4xl max-w-3xl text-center font-bold">

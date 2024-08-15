@@ -6,7 +6,7 @@ export default function EmpresaTitle() {
       <FramerComponent
         style="w-full rounded-md lg:max-w-xl p-6"
         animationInitial={{ x: 200, opacity: 0 }}
-        animationWhileInView={{ x: 0, opacity: 1 }}
+        animationAnimate={{ x: 0, opacity: 1 }}
         animationViewPort={{ once: true, offset: 0.4 }}
       >
         <div className="flex items-center justify-center w-full">

@@ -27,7 +27,7 @@ export default function SliderTrabajos() {
           <CarouselItem>
             <div className="relative h-[500px] sm:h-[600px] lg:h-[700px]">
               <Image
-                src="/slide-1.jpg"
+                src="/carouselEmpresa/slide-1.jpg"
                 alt="Slide 1"
                 fill
                 className="object-cover"
@@ -49,7 +49,7 @@ export default function SliderTrabajos() {
           <CarouselItem>
             <div className="relative h-[500px] sm:h-[600px] lg:h-[700px]">
               <Image
-                src="/slide-2.jpg"
+                src="/carouselEmpresa/slide-2.jpg"
                 alt="Slide 2"
                 fill
                 className="object-cover"
@@ -73,7 +73,7 @@ export default function SliderTrabajos() {
           <CarouselItem>
             <div className="relative h-[500px] sm:h-[600px] lg:h-[700px]">
               <Image
-                src="/slide-3.jpg"
+                src="/carouselEmpresa/slide-3.jpg"
                 alt="Slide 3"
                 fill
                 className="object-cover"
@@ -97,7 +97,7 @@ export default function SliderTrabajos() {
           <CarouselItem>
             <div className="relative h-[500px] sm:h-[600px] lg:h-[700px]">
               <Image
-                src="/slide-4.jpg"
+                src="/carouselEmpresa/slide-4.jpg"
                 alt="Slide 4"
                 fill
                 className="object-cover"
@@ -123,7 +123,7 @@ export default function SliderTrabajos() {
           <CarouselItem>
             <div className="relative h-[500px] sm:h-[600px] lg:h-[700px]">
               <Image
-                src="/slide-5.jpg"
+                src="/carouselEmpresa/slide-5.jpg"
                 alt="Slide 5"
                 fill
                 className="object-cover"

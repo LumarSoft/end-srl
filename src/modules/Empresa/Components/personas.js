@@ -2,32 +2,32 @@ const personas = [
   {
     name: "Pablo Monsalvo",
     role: "CEO",
-    image: "/pablo.png",
+    image: "/miembros/pablo.png",
   },
   {
     name: "Iara Tornatore",
     role: "Secretaria Administrativa",
-    image: "/iara.png",
+    image: "/miembros/iara.png",
   },
   {
     name: "Juan Carlos Monsalvo",
     role: "Representante Técnico",
-    image: "/juan-carlos.png",
+    image: "/miembros/juan-carlos.png",
   },
   {
     name: "Leonardo De Biase",
     role: "Operador END",
-    image: "/leonardo.png",
+    image: "/miembros/leonardo.png",
   },
   {
     name: "Yanina Tornatore",
     role: "Secretaria Of. Técnica",
-    image: "/yanina.png",
+    image: "/miembros/yanina.png",
   },
   {
     name: "Marisel Tornatore",
     role: "Gerente de Calidad",
-    image: "/marisel.png",
+    image: "/miembros/marisel.png",
   },
 ];
 

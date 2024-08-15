@@ -11,11 +11,11 @@ export function Valores() {
       <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
         <FramerComponent
           animationInitial={{ x: 200, opacity: 0 }}
-          animationWhileInView={{ x: 0, opacity: 1 }}
+          animationAnimate={{ x: 0, opacity: 1 }}
           animationViewPort={{ once: true, offset: 0.4 }}
         >
           <img
-            src="/avion.jpg"
+            src="/multimedia/avion.jpg"
             width="700"
             height="500"
             alt="Nuestros Valores"
@@ -25,7 +25,7 @@ export function Valores() {
         <FramerComponent
           style="space-y-4"
           animationInitial={{ x: -200, opacity: 0 }}
-          animationWhileInView={{ x: 0, opacity: 1 }}
+          animationAnimate={{ x: 0, opacity: 1 }}
           animationViewPort={{ once: true, offset: 0.4 }}
         >
           <div className="space-y-2">

@@ -49,7 +49,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <img src="perfil-3.png" className="w-48" />
+          <img src="/logosPng/logoGrandeClaro.png" className="w-48" alt="Logo END"/>
 
           <div className="w-full h-full flex flex-col items-center">
             <h3 className="text-lg font-semibold mb-4">¡Seguinos!</h3>

@@ -17,7 +17,7 @@ export const DescriptionService = () => {
       </h1>
       <div className="relative h-[400px] mb-8">
         <Image
-          src="/turbinaAvion.jpg"
+          src="/multimedia/turbinaAvion.jpg"
           alt="Turbina de avión"
           layout="fill"
           objectFit="cover"
