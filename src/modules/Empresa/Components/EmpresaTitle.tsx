@@ -2,7 +2,7 @@ import { FramerComponent } from "@/shared/Framer/FramerComponent";
 
 export default function EmpresaTitle() {
   return (
-    <div className="mt-16 lg:pb-10 flex flex-col lg:flex-row gap-6 xl:gap-20 justify-center items-center">
+    <div className="mt-20 lg:pb-10 flex flex-col lg:flex-row gap-6 xl:gap-20 justify-center items-center">
       <FramerComponent
         style="w-full rounded-md lg:max-w-xl p-6"
         animationInitial={{ x: 200, opacity: 0 }}

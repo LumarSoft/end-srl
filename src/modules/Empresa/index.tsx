@@ -9,9 +9,10 @@ export default function EmpresaModule() {
     <div>
       <EmpresaTitle/>
       <EmpresaCard />
+      <div className="block lg:hidden flex-grow border-t border-[#5f92cc] mx-4 mt-12"></div>
       <EmpresaCardInverted />
-      <SliderTrabajos/>
       <QuienesSomos />
+      <SliderTrabajos/>
     </div>
   );
 }

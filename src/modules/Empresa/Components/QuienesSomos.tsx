@@ -1,4 +1,5 @@
-"use client"
+"use client";
+import Image from "next/image"; 
 import {
   Carousel,
   CarouselContent,
@@ -9,10 +10,11 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import Autoplay from "embla-carousel-autoplay";
 import { FramerComponent } from "@/shared/Framer/FramerComponent";
+import personas from "./personas.js";
 
 export const QuienesSomos = () => {
   return (
-    <section className="flex flex-col pt-10 w-full gap-16 max-w-7xl mx-auto px-4 lg:px-8 mb-5 mt-9">
+    <section className="flex flex-col pt-10 w-full gap-16 max-w-7xl mx-auto px-4 lg:px-8 mb-20 mt-5">
       <FramerComponent
         style="flex flex-col gap-4 items-center"
         animationInitial={{ opacity: 0, y: 50 }}
@@ -76,7 +78,7 @@ const CarouselComponent = () => {
         animationViewPort={{ once: true, offset: 0.4 }}
       >
         <CarouselContent className="-ml-4">
-          {[1, 2, 3, 4, 5].map((x, i) => (
+          {personas.map((person, i) => (
             <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3" key={i}>
               <FramerComponent
                 style="p-1"
@@ -86,12 +88,16 @@ const CarouselComponent = () => {
                 <Card>
                   <CardContent className="flex aspect-square items-center justify-center p-6">
                     <div className="flex flex-col gap-4 items-center">
-                      <div className="w-20 h-20 rounded-full bg-white" />
-                      <h4 className="text-lg font-semibold">Nombre Apellido</h4>
-                      <p className="text-neutral-400 text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
+                      <Image
+                        src={person.image}
+                        alt={person.name}
+                        width={160}
+                        height={160} 
+                        className="rounded-full"
+                      />
+                      <h4 className="text-lg font-semibold">{person.name}</h4>
+                      <p className="text-sm font-medium text-primary">
+                        {person.role}
                       </p>
                     </div>
                   </CardContent>

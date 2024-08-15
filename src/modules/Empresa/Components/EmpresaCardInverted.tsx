@@ -1,21 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { services } from "@/modules/Servicios/Components/services";
 import { FramerComponent } from "@/shared/Framer/FramerComponent";
 
 export default function EmpresaCardInverted() {
   return (
-    <div className="mt-9 lg:pb-20 flex flex-col lg:flex-row gap-6 xl:gap-20 justify-center">
+    <div className="mt-9 lg:pb-20 flex flex-col lg:flex-row gap-6 p-5 xl:gap-20 justify-center lg:px-5 px-4">
       <FramerComponent
-        style="flex flex-col gap-6 lg:pt-24  lg:max-w-lg"
+        style="flex flex-col gap-6 lg:pt-24 lg:max-w-lg"
         animationInitial={{ x: -200, opacity: 0 }}
         animationWhileInView={{ x: 0, opacity: 1 }}
         animationViewPort={{ once: true, offset: 0.4 }}
@@ -28,7 +18,7 @@ export default function EmpresaCardInverted() {
           Técnica ubicada en la localidad de Hurlingham, Provincia de Buenos
           Aires.{" "}
         </p>
-        <h2 className="text-2xl font-semibold">
+        <h2 className="text-xl lg:text-2xl font-semibold">
           Nuestra base nos ha permitido atender y asistir Servicios Técnicos a
           lo largo y ancho de la República Argentina y en el exterior. Nuestras
           tecnologías e insumos se encuentran en constante actualización para
@@ -45,7 +35,7 @@ export default function EmpresaCardInverted() {
       >
         <div className="relative w-full h-full">
           <Image
-            src="/monumento.jpg"
+            src="/infraestructura.jpg"
             layout="fill"
             objectFit="cover"
             objectPosition="center"
