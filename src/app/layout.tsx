@@ -4,6 +4,10 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Footer from "@/shared/components/Footer/Footer";
 import { Navbar } from "@/shared/components/Navbar/Navbar";
+import { Toaster } from "@/components/ui/toaster";
+import "@/shared/components/OpenModuleAnimation/animation.scss";
+import "@/modules/Home/animation.scss";
+import { OpenHomeAnimation } from "@/shared/components/OpenModuleAnimation/OpenModuleAnimation";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -25,13 +29,15 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-background font-sans antialiased overflow-y-hidden scroll-smooth",
           fontSans.variable
         )}
       >
         <Navbar />
-        <main>{children}</main>
+        <OpenHomeAnimation />
+        {children}
         <Footer />
+        <Toaster />
       </body>
     </html>
   );

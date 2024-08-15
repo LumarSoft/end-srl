@@ -3,7 +3,11 @@ import { Check } from "lucide-react";
 
 export function Valores() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-primary">
+    <FramerComponent
+      style="w-full py-12 md:py-24 lg:py-32 bg-white transition" // Fondo blanco inicial
+      animationInitial={{ backgroundColor: "white" }}
+      animationAnimate={{ backgroundColor: "#2563eb" }} // Cambia a bg-primary
+    >
       <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
         <FramerComponent
           animationInitial={{ x: 200, opacity: 0 }}
@@ -79,28 +83,6 @@ export function Valores() {
           </ul>
         </FramerComponent>
       </div>
-    </section>
-  );
-}
-
-function CheckIcon({
-  checkColor = "blue",
-  ...props
-}: { checkColor?: string } & React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke={checkColor} // Cambia el color del check
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M20 6 9 17l-5-5" />
-    </svg>
+    </FramerComponent>
   );
 }

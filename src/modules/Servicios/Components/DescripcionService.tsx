@@ -1,17 +1,20 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardDescription, CardTitle } from "@/components/ui/card";
+import { FramerComponent } from "@/shared/Framer/FramerComponent";
 import { Briefcase, Cpu, Target } from "lucide-react";
 import Image from "next/image";
 
 export const DescriptionService = () => {
   return (
-    <section aria-label="Información principal" className="mb-12">
+    <FramerComponent
+      aria-label="Información principal"
+      style="mb-12"
+      animationInitial={{ x: 200, opacity: 0 }}
+      animationWhileInView={{ x: 0, opacity: 1 }}
+      animationViewPort={{ once: true, offset: 0.4 }}
+    >
+      <h1 className="text-4xl font-bold mb-8 text-center text-sky-700">
+        Ensayos no Destructivos
+      </h1>
       <div className="relative h-[400px] mb-8">
         <Image
           src="/turbinaAvion.jpg"
@@ -59,6 +62,6 @@ export const DescriptionService = () => {
           </CardDescription>
         </Card>
       </div>
-    </section>
+    </FramerComponent>
   );
 };

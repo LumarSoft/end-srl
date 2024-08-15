@@ -62,8 +62,6 @@ export function CarouselInfo() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
       </Carousel>
     </FramerComponent>
   );

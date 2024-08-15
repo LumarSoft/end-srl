@@ -6,7 +6,7 @@ import SliderTrabajos from "./Components/SliderTrabajos";
 
 export default function EmpresaModule() {
   return (
-    <div className="w-full">
+    <div>
       <EmpresaTitle/>
       <EmpresaCard />
       <EmpresaCardInverted />

@@ -11,10 +11,16 @@ import {
 import { Button } from "@/components/ui/button";
 import services from "./services";
 import Link from "next/link";
+import { FramerComponent } from "@/shared/Framer/FramerComponent";
 
 export default function ServicesCard() {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <FramerComponent
+      style="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+      animationInitial={{ x: -200, opacity: 0 }}
+      animationWhileInView={{ x: 0, opacity: 1 }}
+      animationViewPort={{ once: true, offset: 0.4 }}
+    >
       {services.map((service, index) => (
         <Card
           key={index}
@@ -49,6 +55,6 @@ export default function ServicesCard() {
           </div>
         </Card>
       ))}
-    </div>
+    </FramerComponent>
   );
 }

@@ -1,3 +1,4 @@
+"use client";
 import {
   Carousel,
   CarouselContent,
@@ -5,10 +6,17 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from "@/components/ui/carousel";
+import { FramerComponent } from "@/shared/Framer/FramerComponent";
+import Autoplay from "embla-carousel-autoplay";
 
 export default function OneServiceModule({ data }: { data: any }) {
   return (
-    <div className="w-full px-4 md:px-28 2xl:px-80 mx-auto py-28 md:py-28">
+    <FramerComponent
+      animationInitial={{ y: -100, opacity: 0 }}
+      animationWhileInView={{ y: 0, opacity: 1 }}
+      animationViewPort={{ once: true, offset: 0.4 }}
+      style="w-full px-4 md:px-28 2xl:px-80 mx-auto py-28 md:py-28"
+    >
       <div className="px-4 md:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-8 md:mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">{data.title}</h2>
@@ -18,19 +26,27 @@ export default function OneServiceModule({ data }: { data: any }) {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 lg:gap-6 mb-20 md:mb-14">
           <div className="bg-background rounded-lg shadow-lg p-6 md:p-8">
-            <h3 className="text-xl md:text-2xl font-bold mb-2 text-primary">Método</h3>
+            <h3 className="text-xl md:text-2xl font-bold mb-2 text-primary">
+              Método
+            </h3>
             <p className="">{data.cards[0]}</p>
           </div>
           <div className="bg-background rounded-lg shadow-lg p-6 md:p-8">
-            <h3 className="text-xl md:text-2xl font-bold mb-2 text-primary">Aplicación</h3>
+            <h3 className="text-xl md:text-2xl font-bold mb-2 text-primary">
+              Aplicación
+            </h3>
             <p className="">{data.cards[1]}</p>
           </div>
           <div className="bg-background rounded-lg shadow-lg p-6 md:p-8">
-            <h3 className="text-xl md:text-2xl font-bold mb-2 text-primary">Ventajas</h3>
+            <h3 className="text-xl md:text-2xl font-bold mb-2 text-primary">
+              Ventajas
+            </h3>
             <p className="">{data.cards[2]}</p>
           </div>
           <div className="bg-background rounded-lg shadow-lg p-6 md:p-8">
-            <h3 className="text-xl md:text-2xl font-bold mb-2 text-primary">Desventajas</h3>
+            <h3 className="text-xl md:text-2xl font-bold mb-2 text-primary">
+              Desventajas
+            </h3>
             <p className="">{data.cards[3]}</p>
           </div>
         </div>
@@ -73,7 +89,18 @@ export default function OneServiceModule({ data }: { data: any }) {
             </ul>
           </div>
           <div>
-            <Carousel className="w-full">
+            <Carousel
+              className="w-full"
+              plugins={[
+                Autoplay({
+                  delay: 2000,
+                }),
+              ]}
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+            >
               <CarouselContent>
                 <CarouselItem>
                   <img
@@ -112,7 +139,7 @@ export default function OneServiceModule({ data }: { data: any }) {
           </div>
         </div>
       </div>
-    </div>
+    </FramerComponent>
   );
 }
 
