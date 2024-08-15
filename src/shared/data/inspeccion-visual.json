@@ -1,0 +1,22 @@
+{
+  "serviceName": "inspeccion-visual",
+  "title": "Inspección Visual",
+  "subtitle": "Detección de defectos superficiales o deterioros estructurales en todos los materiales.",
+  "items": ["Boroscopio", "Prisma Óptico", "Micrómetro Óptico"],
+  "items_desc": [
+    " ",
+    "Verificación de grietas en ventanas de pasajeros y parabrisas.",
+    "Verificación y medición de la profundidad de grietas y ondulaciones en materiales metálicos y acrílicos."
+  ],
+  "images": [
+    "/servicioEspecifico/inspeccion-visual.jpg",
+    "/servicioEspecifico/inspeccion-visual-1.jpg",
+    "/servicioEspecifico/inspeccion-visual-2.jpg"
+  ],
+  "cards": [
+    "VISUAL OPTICO",
+    "Detección de defectos superficiales o deterioros estructurales en todos los materiales",
+    "Fácil de usar en áreas donde otros métodos son impracticables. La visualización ayuda a conocer cual será el otro método a aplicar.",
+    "La confiabilidad depende de la habilidad y experiencia del operador, la facilidad de acceso o del uso de boroscopios."
+  ]
+}

@@ -4,10 +4,10 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { MapPin, MessageSquare, Users, UserCog, Building } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import { useToast } from "@/components/ui/use-toast";
-import { Toaster } from "@/components/ui/toaster";
+import { FramerComponent } from "@/shared/Framer/FramerComponent";
 
 export default function ContactCard() {
   const [formData, setFormData] = useState({
@@ -69,141 +69,74 @@ export default function ContactCard() {
   };
 
   return (
-    <main>
-      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
-        <div className="bg-background p-8 lg:p-12 flex flex-col justify-center items-center">
-          <div className="w-full max-w-xl space-y-8">
-            <div className="flex flex-col items-center space-y-4 ">
-              <MessageSquare className="w-12 h-12" />
-              <h2 className="text-3xl font-bold text-center lg:text-4xl">
-                Contáctanos
-              </h2>
-            </div>
-            <form className="space-y-6" ref={form} onSubmit={handleSubmit}>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Nombre</Label>
-                  <Input
-                    id="user_name"
-                    name="user_name"
-                    placeholder="Juan Pérez"
-                    type="text"
-                    value={formData.user_name}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="user_email">Email</Label>
-                  <Input
-                    id="user_email"
-                    name="user_email"
-                    type="email"
-                    placeholder="tu@ejemplo.com"
-                    value={formData.user_email}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="user_phone">Teléfono</Label>
-                <Input
-                  id="user_phone"
-                  name="user_phone"
-                  type="number"
-                  placeholder="(555) 555-5555"
-                  value={formData.user_phone}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="message">Mensaje</Label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  placeholder="¿En qué podemos ayudarte?"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <Button type="submit" className="w-full">
-                Enviar
-              </Button>
-            </form>
-          </div>
+    <FramerComponent
+      style="bg-background p-8 lg:p-12 flex flex-col justify-center items-center"
+      animationInitial={{ x: -200, opacity: 0 }}
+      animationAnimate={{ x: 0, opacity: 1 }}
+    >
+      <div className="w-full max-w-xl space-y-8">
+        <div className="flex flex-col items-center space-y-4 ">
+          <MessageSquare className="w-12 h-12" />
+          <h2 className="text-3xl font-bold text-center lg:text-4xl">
+            Contáctanos
+          </h2>
         </div>
-        <div className="bg-slate-700 text-primary-foreground p-8 lg:p-12 flex flex-col justify-center items-center">
-          <div className="w-full max-w-xl space-y-8 text-center">
-            <div className="flex flex-col items-center space-y-4">
-              <MapPin className="w-12 h-12" />
-              <h2 className="text-3xl font-bold lg:text-4xl">
-                ¿Dónde estamos?
-              </h2>
+        <form className="space-y-6" ref={form} onSubmit={handleSubmit}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="space-y-2">
+              <Label htmlFor="name">Nombre</Label>
+              <Input
+                id="user_name"
+                name="user_name"
+                placeholder="Juan Pérez"
+                type="text"
+                value={formData.user_name}
+                onChange={handleChange}
+                required
+              />
             </div>
-            <div className="rounded-xl overflow-hidden w-full aspect-video">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6569.943923520225!2d-58.643082!3d-34.579576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbeab4b6dabdb%3A0xabe1869f3f2b00bc!2sEND%20Servicios%20Aeronauticos%20SRL!5e0!3m2!1ses!2sus!4v1723234704352!5m2!1ses!2sus"
-                className="w-full h-full"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-            <div className="space-y-6 text-left">
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold flex items-center">
-                    <Building className="w-5 h-5 mr-2" /> Taller CASA CENTRAL:
-                  </h4>
-                  <p>
-                    <b className="text-cyan-400"> (+54 911)</b> 4452-5240
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold flex items-center">
-                    <Building className="w-5 h-5 mr-2" /> Taller Anexo
-                    (ARGENPROP SRL):
-                  </h4>
-                  <p>
-                    <b className="text-cyan-400">(+54 911)</b> 4741-2035
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold flex items-center">
-                    <Users className="w-5 h-5 mr-2" /> En Campaña
-                  </h4>
-                  <p>
-                    Juan Carlos: <b className="text-cyan-400">(+54 911)</b>{" "}
-                    15-5327-3431
-                  </p>
-                  <p>
-                    Pablo: <b className="text-cyan-400">(+54 911)</b>{" "}
-                    15-3422-0562
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold flex items-center">
-                    <UserCog className="w-5 h-5 mr-2" /> Oficina Técnica /
-                    Administración
-                  </h4>
-                  <p>
-                    Oficina Técnica (Yanina):{" "}
-                    <b className="text-cyan-400">(+54 911)</b> 15-5384-4610
-                  </p>
-                  <p>
-                    Administración: <b className="text-cyan-400">(+54 911)</b>{" "}
-                    15-5036-4651
-                  </p>
-                </div>
-              </div>
+            <div className="space-y-2">
+              <Label htmlFor="user_email">Email</Label>
+              <Input
+                id="user_email"
+                name="user_email"
+                type="email"
+                placeholder="tu@ejemplo.com"
+                value={formData.user_email}
+                onChange={handleChange}
+                required
+              />
             </div>
           </div>
-        </div>
+          <div className="space-y-2">
+            <Label htmlFor="user_phone">Teléfono</Label>
+            <Input
+              id="user_phone"
+              name="user_phone"
+              type="number"
+              placeholder="(555) 555-5555"
+              value={formData.user_phone}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="message">Mensaje</Label>
+            <Textarea
+              id="message"
+              name="message"
+              rows={4}
+              placeholder="¿En qué podemos ayudarte?"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <Button type="submit" className="w-full">
+            Enviar
+          </Button>
+        </form>
       </div>
-      <Toaster />
-    </main>
+    </FramerComponent>
   );
 }

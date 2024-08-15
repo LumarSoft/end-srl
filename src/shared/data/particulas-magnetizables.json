@@ -1,0 +1,22 @@
+{
+  "serviceName": "particulas-magnetizables",
+  "title": "Partículas Magnetizables",
+  "subtitle": "Detección de defectos en la superficie o debajo de ella en ferromagnéticos de cualquier forma o tratamientos térmicos.",
+  "items_desc": [" ", " ", " "],
+  "items": [
+    "Pruebas en piezas fabricadas, soldadas, forjadas y herramientas de corte (método fluorescente).",
+    "Pruebas del rotor principal, maestro, eje del rotor de transmisión y demás piezas de motor y estructura de un helicóptero.",
+    "Pruebas en piezas de hélice."
+  ],
+  "images": [
+    "/servicioEspecifico/particulas-magnetizables.jpg",
+    "/servicioEspecifico/particulas-magnetizables-1.jpg",
+    "/servicioEspecifico/particulas-magnetizables-2.jpg"
+  ],
+  "cards": [
+    "PARTÍCULAS MAGNETIZABLES",
+    "Detección de defectos en la superficie o debajo de ella en ferromagnéticos de cualquier forma o tratamientos térmicos.",
+    "Es un principio simple, fácil, portátil, rápido y método positivo.",
+    "Las piezas deben estar limpias antes de iniciar el ensayo y desmagnetizarlas al finalizar el mismo. El flujo magnético debe ser normal al plano o al defecto, para evitar indicaciones erróneas."
+  ]
+}

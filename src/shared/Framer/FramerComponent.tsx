@@ -6,7 +6,7 @@ export const FramerComponent = ({
   style,
   animationInitial,
   animationAnimate,
-  animationTransition,
+  animationTransition = { delay: 0.4 },
   animationWhileInView,
   animationViewPort,
   animationVariants,

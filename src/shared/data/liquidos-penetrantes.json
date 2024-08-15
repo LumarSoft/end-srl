@@ -1,0 +1,22 @@
+{
+  "serviceName": "liquidos-penetrantes",
+  "title": "Líquidos Penetrantes",
+  "subtitle": "Detección de fisuras superficiales en todos los materiales, forjas, fundiciones, piezas mecanizadas, soldaduras.",
+  "items_desc": [" ", " ", " "],
+  "items": [
+    "Pruebas de álabes de turbina de varios fabricantes.",
+    "Pruebas de piezas fabricadas de titanio, aluminio, magnesio y uniones especiales (método fluorescente).",
+    "Pruebas de piezas y seguimientos diversos de turbinas de helicópteros y jets ejecutivos."
+  ],
+  "images": [
+    "/servicioEspecifico/liquidos-penetrantes.jpg",
+    "/servicioEspecifico/liquidos-penetrantes-1.jpg",
+    "/servicioEspecifico/liquidos-penetrantes-2.jpg"
+  ],
+  "cards": [
+    "PENETRANTES",
+    "Detección de fisuras superficiales en todos los materiales, forjas, fundiciones, piezas mecanizadas, soldaduras.",
+    "Fácil de usar, exacto, rápido y simple de interpretar.",
+    "Los defectos deben estar abiertos, en superficie y accesible al operador. Los defectos pueden cubrirse con residuos que dificulten la visualización. Las piezas deben estar limpias antes y después del ensayo."
+  ]
+}

@@ -1,40 +1,59 @@
 import { Facebook, Instagram, Linkedin, MapPin, Phone } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import Link from "next/link";
+import { FramerComponent } from "@/shared/Framer/FramerComponent";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-slate-200 py-4">
+    <FramerComponent
+      style="bg-slate-900 text-slate-200 py-4"
+      animationInitial={{ y: 200, opacity: 0 }}
+      animationAnimate={{ y: 0, opacity: 1 }}
+    >
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="w-full place-content-center">
             <h3 className="text-lg font-semibold mb-4">Mapa del Sitio</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-cyan-400 transition-colors">
+                <Link
+                  href="/"
+                  className="hover:text-cyan-400 transition-colors"
+                >
                   Inicio
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-cyan-400 transition-colors">
+                <Link
+                  href="/empresa"
+                  className="hover:text-cyan-400 transition-colors"
+                >
                   Nuestra Empresa
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-cyan-400 transition-colors">
+                <Link
+                  href="/servicios"
+                  className="hover:text-cyan-400 transition-colors"
+                >
                   Nuestros Servicios
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-cyan-400 transition-colors">
+                <Link
+                  href="/contacto"
+                  className="hover:text-cyan-400 transition-colors"
+                >
                   Contacto
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
+          <img src="/logosPng/logoGrandeClaro.png" className="w-48" alt="Logo END"/>
 
-          <div>
+          <div className="w-full h-full flex flex-col items-center">
             <h3 className="text-lg font-semibold mb-4">¡Seguinos!</h3>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 justify-center">
               <a href="#" className="hover:text-cyan-400 transition-colors">
                 <Facebook size={24} />
               </a>
@@ -46,7 +65,8 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="">
+
+          <div className="w-full flex flex-col">
             <h3 className="text-lg font-semibold mb-4">Contacto</h3>
             <a
               href="tel:+541144525240"
@@ -72,7 +92,7 @@ const Footer = () => {
           © {new Date().getFullYear()} END Servicios Aeronáuticos.
         </div>
       </div>
-    </footer>
+    </FramerComponent>
   );
 };
 
