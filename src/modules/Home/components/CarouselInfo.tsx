@@ -56,7 +56,7 @@ export function CarouselInfo() {
                 <img
                   src={slide.src}
                   alt={`Slide ${index + 1}`}
-                  className="w-full h-[700px] object-fill rounded-lg"
+                  className="w-full h-[300px] md:h-[500px] xl:h-[700px] object-cover rounded-lg"
                 />
               </div>
             </CarouselItem>
