@@ -1,4 +1,5 @@
 import { FramerComponent } from "@/shared/Framer/FramerComponent";
+import { Badge } from "@/components/ui/badge";
 
 export function Habilitaciones() {
   const container = {
@@ -35,15 +36,60 @@ export function Habilitaciones() {
             animationWhileInView={{ y: 0, opacity: 1 }}
             animationViewPort={{ once: true, offset: 0.4 }}
           >
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
-              Habilitaciones
-            </h2>
-            <p className="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              ESTE T.A.R. (TALLERES AERONÁUTICOS DE REPARACIÓN) CUENTA CON TODAS
-              LAS CERTIFICACIONES Y NORMAS VIGENTES REQUERIDAS POR NUESTRA
-              ADMINISTRACIÓN NACIONAL DE AVIACION CIVIL (ANAC) Y SE MANTIENEN
-              ACTUALIZADAS CONSTANTEMENTE.
-            </p>
+            <div className="w-full flex">
+              <div className="w-full">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
+                  Habilitaciones
+                </h2>
+                <p className="max-w-[800px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  ESTE T.A.R. (TALLERES AERONÁUTICOS DE REPARACIÓN) CUENTA CON
+                  TODAS LAS CERTIFICACIONES Y NORMAS VIGENTES REQUERIDAS POR
+                  NUESTRA ADMINISTRACIÓN NACIONAL DE AVIACION CIVIL (ANAC) Y SE
+                  MANTIENEN ACTUALIZADAS CONSTANTEMENTE.
+                </p>
+              </div>
+              <div className="w-full text-center">
+                Archivos
+                <div className="flex flex-col items-center mt-4 gap-2">
+                  <Badge>
+                    <a
+                      href="/Certificado de Habilitacion (ANAC).pdf"
+                      target="_blank"
+                      className="flex"
+                    >
+                      Certificado de Habilitacion (ANAC)
+                    </a>
+                  </Badge>
+                  <Badge>
+                    <a
+                      href="/Certificado de Habilitacion (OMAD).pdf"
+                      target="_blank"
+                      className="flex"
+                    >
+                      Certificado de Habilitacion (OMAD)
+                    </a>
+                  </Badge>
+                  <Badge>
+                    <a
+                      href="/ESPECIFICACIONES DE OP (ANAC).pdf"
+                      target="_blank"
+                      className="flex"
+                    >
+                      Especificaciones de OP (ANAC)
+                    </a>
+                  </Badge>
+                  <Badge>
+                    <a
+                      href="/ESPECIFICACIONES DE OP (OMAD).pdf"
+                      target="_blank"
+                      className="flex"
+                    >
+                      Especificaciones de OP (OMAD)
+                    </a>
+                  </Badge>
+                </div>
+              </div>
+            </div>
           </FramerComponent>
           <FramerComponent
             style="grid gap-4 md:grid-cols-2 lg:grid-cols-4 text-center"
@@ -60,10 +106,12 @@ export function Habilitaciones() {
               <h3 className="text-lg font-semibold">
                 Partículas Magnetizables
               </h3>
-              <p className="text-muted-foreground flex-1">
-                ASTM E1444/E1444M - ASTM E709 - Procedimientos aprobados de
-                Lycoming - PROCEDIMIENTOS DEL FABRICANTE
-              </p>
+              <ul className="text-muted-foreground flex-1">
+                <li>ASTM-E 1444/E1444M</li>
+                <li>ASTM-E 709</li>
+                <li>Procedimientos aprobados de Lycoming</li>
+                <li>Procedimientos del Fabricante</li>
+              </ul>
             </FramerComponent>
             <FramerComponent
               style="rounded-lg bg-secondary p-4 border flex flex-col justify-between items-center"
@@ -71,10 +119,12 @@ export function Habilitaciones() {
               animationVariants={itemAnimado}
             >
               <h3 className="text-lg font-semibold">Corrientes Inducidas</h3>
-              <p className="text-muted-foreground flex-1">
-                MIL-HDBK-728/2 - MIL-STD-1537 - SAE ARP 4402 - PROCEDIMIENTOS
-                DEL FABRICANTE
-              </p>
+              <ul className="text-muted-foreground flex-1">
+                <li>MIL-HDBK-728/2</li>
+                <li>MIL-STD-1537</li>
+                <li>ASTM E1004</li>
+                <li>Procedimientos del Fabricante</li>
+              </ul>
             </FramerComponent>
             <FramerComponent
               style="rounded-lg bg-secondary p-4 border flex flex-col justify-between items-center"
@@ -82,12 +132,20 @@ export function Habilitaciones() {
               animationVariants={itemAnimado}
             >
               <h3 className="text-lg font-semibold">Ultrasonidos</h3>
-              <p className="text-muted-foreground flex-1">
-                ASTM E317 - ASTM E587 - ASTM B594 - SAE AMS-STD-2154 - ASTM E127
-                - Procedimiento MHS-200 de Teledyne Continental Motors - CFM56-7
-                Fan Blade Ultrasonic Inspection de GE Aircraft Engines -
-                PROCEDIMIENTOS DEL FABRICANTE
-              </p>
+              <ul className="text-muted-foreground flex-1">
+                <li>ASTM E 114, ASTM-E 317, ASTM-E 587</li>
+                <li>
+                  ASTM-B 594, ASTM-E 797 /E797M, ASTM E 2580, SAE AMS-STD-2154
+                </li>
+                <li>
+                  CMI Specification MHS-200 (Personal con certificado oficial)
+                </li>
+                <li>
+                  Procedimientos CFM56-7B (Fan Blade)(Personal con certificados
+                  oficial)
+                </li>
+                <li>Procedimiento de fabricante</li>
+              </ul>
             </FramerComponent>
             <FramerComponent
               style=" rounded-lg bg-secondary p-4 border"
@@ -95,9 +153,10 @@ export function Habilitaciones() {
               animationVariants={itemAnimado}
             >
               <h3 className="text-lg font-semibold">Ultrasonido Phase Array</h3>
-              <p className="text-muted-foreground flex-1">
-                ASTM E2491 - PROCEDIMIENTOS DEL FABRICANTE
-              </p>
+              <ul className="text-muted-foreground flex-1">
+                <li>ASTM-E 2491</li>
+                <li>Procedimiento del fabricante</li>
+              </ul>
             </FramerComponent>
             <FramerComponent
               style="rounded-lg bg-secondary p-4 border flex flex-col justify-between items-center"
@@ -105,11 +164,12 @@ export function Habilitaciones() {
               animationVariants={itemAnimado}
             >
               <h3 className="text-lg font-semibold">Liquidos penetrantes</h3>
-              <p className="text-muted-foreground flex-1">
-                ASTM E165/E165M - ASTM E1417/E1417M - SAE AMS-2644 -
-                Procedimientos aprobados de Lycoming - PROCEDIMIENTOS DEL
-                FABRICANTE
-              </p>
+              <ul className="text-muted-foreground flex-1">
+                <li>ASTM-E 195/E165M</li>
+                <li>ASTM-E 1417/E1417M</li>
+                <li>Procedimientos aprobados de Lycomming</li>
+                <li>Procedimientos del fabricante</li>
+              </ul>
             </FramerComponent>
             <FramerComponent
               style="rounded-lg bg-secondary p-4 border flex flex-col justify-between items-center"
@@ -117,10 +177,13 @@ export function Habilitaciones() {
               animationVariants={itemAnimado}
             >
               <h3 className="text-lg font-semibold">Radiografía Industrial</h3>
-              <p className="text-muted-foreground flex-1">
-                ASTM E1742/E1742M - ASTM E94 - ASTM E1079 - ASTM E1254 -
-                PROCEDIMIENTOS DEL FABRICANTE
-              </p>
+              <ul className="text-muted-foreground flex-1">
+                <li>ASTM-E1742/E1742M</li>
+                <li>ASTM E94/E94M</li>
+                <li>ASTM E1079</li>
+                <li>ASTM E1254</li>
+                <li>Procedimientos del fabricante</li>
+              </ul>
             </FramerComponent>
             <FramerComponent
               style="rounded-lg bg-secondary p-4 border flex flex-col justify-between items-center"
@@ -131,7 +194,7 @@ export function Habilitaciones() {
                 Endoscopía / Boroscopía / Videoscopía
               </h3>
               <p className="text-muted-foreground flex-1">
-                PROCEDIMIENTOS DEL FABRICANTE
+                Procedimientos del fabricante
               </p>
             </FramerComponent>
             <FramerComponent
@@ -139,33 +202,26 @@ export function Habilitaciones() {
               animationInitial={{ opacity: 0, y: 50 }}
               animationVariants={itemAnimado}
             >
-              <h3 className="text-lg font-semibold">Personal / Taller</h3>
-              <p className="text-muted-foreground flex-1">
-                ISO 9712 - ASTM E1212 - ASTM E543 - ASNT SNT-TC-1A
-              </p>
+              <h3 className="text-lg font-semibold">Dureza</h3>
+              <ul className="text-muted-foreground flex-1">
+                <li>ASTM-A 1038 (Método UCI)</li>
+                <li>ASTM A956/A956M (Método Leeb)</li>
+              </ul>
+            </FramerComponent>
+            <FramerComponent
+              style="rounded-lg bg-secondary p-4 border flex flex-col justify-between items-center"
+              animationInitial={{ opacity: 0, y: 50 }}
+              animationVariants={itemAnimado}
+            >
+              <h3 className="text-lg font-semibold">Termografía</h3>
+              <ul className="text-muted-foreground flex-1">
+                <li>ASTM-E 2582</li>
+                <li>Procedimientos del Fabricante</li>
+              </ul>
             </FramerComponent>
           </FramerComponent>
         </div>
       </div>
     </section>
-  );
-}
-
-function BadgeIcon(props: any) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
-    </svg>
   );
 }
